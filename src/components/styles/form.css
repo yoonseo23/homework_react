@@ -53,4 +53,8 @@
   line-height: 1.25rem;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
+
+  &:focus-visible {
+    outline-offset: .25rem;
+  }
 }
