@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./styles/hidden-button.css"
 
 export default function PwHiddenButton({ inputRef }) {
   const [hidden, setHidden] = useState(true)
@@ -12,11 +13,11 @@ export default function PwHiddenButton({ inputRef }) {
   }
 
   return (
-      <button type="button" onClick={toggle} aria-label={hidden ? "비밀번호 보기" : "비밀번호 숨기기" } aria-pressed={hidden}>
+      <button className="hiddenButton" type="button" onClick={toggle} aria-label={hidden ? "비밀번호 보기" : "비밀번호 숨기기" } aria-pressed={hidden}>
         {
           hidden
-            ? <img src="src/image/hidden.svg" alt="비밀번호 보기" />
-            : <img src="src/image/visible.svg" alt="비밀번호 숨기기" />
+            ? <img src="src/image/hidden.svg" alt="비밀번호 보기" width={20} height={20}/>
+            : <img src="src/image/visible.svg" alt="비밀번호 숨기기" width={20} height={20}/>
         }
       </button>
   )

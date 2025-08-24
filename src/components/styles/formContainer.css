@@ -1,0 +1,7 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  min-inline-size: 17rem;
+  background-color: #efefef;
+}

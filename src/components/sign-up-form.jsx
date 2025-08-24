@@ -1,5 +1,6 @@
 import { useId, useRef, useState } from "react"
 import PwHiddenButton from "./hidden-button"
+import "./styles/form.css"
 
 export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, setSavedPassword}) {
   const id = useId()
@@ -33,10 +34,11 @@ export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, 
 
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor={`${id}-name`}>이름</label>
+    <form className="authForm" onSubmit={handleSubmit}>
+      <div className="formItem">
+        <label className="formLabel" htmlFor={`${id}-name`}>이름</label>
         <input
+          className="formInput"
           id={`${id}-name`}
           value={name}
           type="text"
@@ -45,9 +47,10 @@ export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, 
           onChange={(e) => setName(e.target.value)}
           placeholder="2글자 이상 입력"/>
       </div>
-      <div>
-        <label htmlFor={`${id}-email`}>이메일</label>
+      <div className="formItem">
+        <label className="formLabel" htmlFor={`${id}-email`}>이메일</label>
         <input
+          className="formInput"
           id={`${id}-email`}
           value={email}
           type="email"
@@ -56,9 +59,10 @@ export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, 
           onChange={(e) => setEmail(e.target.value)}
           placeholder="user@company.io"/>
       </div>
-      <div>
-        <label htmlFor={`${id}-password`}>패스워드</label>
+      <div className="formItem">
+        <label className="formLabel" htmlFor={`${id}-password`}>패스워드</label>
         <input
+          className="formInput"
           id={`${id}-password`}
           value={password}
           ref={pwRef}
@@ -69,9 +73,10 @@ export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, 
           placeholder="숫자, 영문 조합 6자리 이상 입력"/>
           <PwHiddenButton inputRef={pwRef} />
       </div>
-      <div>
-        <label htmlFor={`${id}-passwordCheck`}>패스워드 확인</label>
+      <div className="formItem">
+        <label className="formLabel" htmlFor={`${id}-passwordCheck`}>패스워드 확인</label>
         <input
+          className="formInput"
           id={`${id}-passwordCheck`}
           value={passwordCheck}
           ref={pwCheckRef}
@@ -81,7 +86,7 @@ export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, 
           placeholder="입력한 패스워드 다시 입력"/>
           <PwHiddenButton inputRef={pwCheckRef} />
       </div>
-      <button type="submit" className="submitButton" style={{ backgroundColor: "#aaaaee" }}>
+      <button type="submit" className="submitButton" >
         회원가입
       </button>
     </form>

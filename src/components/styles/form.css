@@ -1,0 +1,56 @@
+.authForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-block: 1.5rem 4rem;
+  padding-inline: 1.5rem;
+  border-radius: .5rem;
+  min-inline-size: 15rem;
+  background-color: #fff;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-block: .75rem;
+  border-block-end: 1px solid var(--color-line-gray, #d9d9de);
+
+  .formLabel {
+    color: var(--color-font-black, #26262c);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    font-variation-settings: "opsz" auto;
+  }
+
+  .formInput {
+    padding-block-start: .5rem;
+
+    &::placeholder {
+      color: var(--color-font-gray, #62636C);
+      font-size: .875rem;
+      line-height: 1.25rem;
+      letter-spacing: 0em;
+      font-variation-settings: "opsz" auto;
+    }
+  }
+}
+
+.submitButton {
+  position: absolute;
+  margin-inline: 2rem;
+  padding-block: .75rem;
+  inset-block-end: -1.375rem;
+  inset-inline: 0;
+  border-radius: 999px;
+  background-color: var(--color-button-blue, #3578ff);
+
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import LoginForm from "./log-in-form"
 import SignUpForm from "./sign-up-form"
+import './styles/formContainer.css'
 
 export default function Form() {
   const [formMode, setFormMode] = useState('signup') // signup | login
@@ -9,7 +10,7 @@ export default function Form() {
   const [savedPassword, setSavedPassword] = useState('')
 
   return (
-    <div>
+    <div className="formContainer">
       {
         formMode === 'signup'
           ? (

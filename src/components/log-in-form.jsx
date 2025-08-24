@@ -1,5 +1,6 @@
 import { useId, useState, useRef } from "react"
 import PwHiddenButton from "./hidden-button"
+import "./styles/form.css"
 
 export default function LoginForm({ savedName, defaultEmail, checkPassword }) {
   const id = useId()
@@ -19,10 +20,11 @@ export default function LoginForm({ savedName, defaultEmail, checkPassword }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor={`${id}-email`}>이메일</label>
+    <form className="authForm" onSubmit={handleSubmit}>
+          <div className="formItem">
+            <label className="formLabel" htmlFor={`${id}-email`}>이메일</label>
             <input
+              className="formInput"
               type="email"
               required
               id={`${id}-email`}
@@ -30,9 +32,10 @@ export default function LoginForm({ savedName, defaultEmail, checkPassword }) {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="user@company.io"/>
           </div>
-          <div>
-            <label htmlFor={`${id}-password`}>패스워드</label>
+          <div className="formItem">
+            <label className="formLabel" htmlFor={`${id}-password`}>패스워드</label>
             <input
+              className="formInput"
               id={`${id}-password`}
               value={password}
               ref={pwRef}
