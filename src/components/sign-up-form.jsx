@@ -1,4 +1,5 @@
 import { useId, useRef, useState } from "react"
+import PwHiddenButton from "./hidden-button"
 
 export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, setSavedPassword}) {
   const id = useId()
@@ -66,6 +67,7 @@ export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, 
           onChange={(e) => setPassword(e.target.value)}
           pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
           placeholder="숫자, 영문 조합 6자리 이상 입력"/>
+          <PwHiddenButton inputRef={pwRef} />
       </div>
       <div>
         <label htmlFor={`${id}-passwordCheck`}>패스워드 확인</label>
@@ -77,6 +79,7 @@ export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, 
           required
           onChange={(e) => setPasswordCheck(e.target.value)}
           placeholder="입력한 패스워드 다시 입력"/>
+          <PwHiddenButton inputRef={pwCheckRef} />
       </div>
       <button type="submit" className="submitButton" style={{ backgroundColor: "#aaaaee" }}>
         회원가입

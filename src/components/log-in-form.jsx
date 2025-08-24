@@ -1,10 +1,12 @@
-import { useId, useState } from "react"
-// import HiddenButton from "./hidden-button"
+import { useId, useState, useRef } from "react"
+import PwHiddenButton from "./hidden-button"
 
 export default function LoginForm({ savedName, defaultEmail, checkPassword }) {
   const id = useId()
   const [email, setEmail] = useState(defaultEmail)
   const [password, setPassword] = useState('')
+
+  const pwRef = useRef(null)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -31,13 +33,15 @@ export default function LoginForm({ savedName, defaultEmail, checkPassword }) {
           <div>
             <label htmlFor={`${id}-password`}>패스워드</label>
             <input
-              type="password"
-              required
               id={`${id}-password`}
               value={password}
+              ref={pwRef}
+              type="password"
+              required
               onChange={(e) => setPassword(e.target.value)}
               pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
               placeholder="숫자, 영문 조합 6자리 이상 입력"/>
+            <PwHiddenButton inputRef={pwRef}/>
           </div>
           <button type="submit" className="submitButton" >
             로그인
