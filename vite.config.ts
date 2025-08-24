@@ -3,8 +3,5 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/homework_react/',
-  build: {
-    outDir: 'docs',
-  },
+  base: '/homework_react/'
 })
