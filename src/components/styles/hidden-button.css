@@ -3,4 +3,5 @@
   inset: auto 0 .75rem auto;
   block-size: 1.25rem;
   inline-size: 1.25rem;
+  cursor: pointer;
 }
