@@ -28,7 +28,6 @@ export default function SignUpForm({setFormMode, setSavedName, setPrefillEmail, 
     setSavedPassword(password)
     setSavedName(name)
     setFormMode('login')
-    console.log(email)
 
   }
 
