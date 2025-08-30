@@ -10,3 +10,8 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
+
+.app {
+  background: #FFF9ED;
+  padding: 2rem;
+}
