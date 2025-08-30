@@ -58,7 +58,7 @@ export default function MainPage() {
 
     return (
       <form className="searchBar" onSubmit={handleSearch}>
-        {/* <label htmlFor={id} className="sr-only">원두 이름 검색</label> */}
+        <label htmlFor={id} className="sr-only">원두 이름 검색</label>
         <input className="searchBar__input" id={id} type="search" placeholder="Search Bean Name..." value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
         <button className="searchBar__searchButton" type="submit" aria-label="검색">
           <img src={searchButton} alt="" width={48} height={48}/>
@@ -78,9 +78,7 @@ export default function MainPage() {
     )
   }
 
-
-  // datas.json을 사용
-  function TagFlavors({ selected, onToggle}) {
+  function TagFlavors({ selected, onToggle }) {
     const tagFlavors = Array.from(new Set(detailData.flavorNotes ?? []))
 
     return (
