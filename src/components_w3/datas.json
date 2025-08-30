@@ -1,0 +1,39 @@
+{
+  "flavorNotes": [
+    "Balanced",
+    "Berry",
+    "Bold",
+    "Bright",
+    "Bright Acidity",
+    "Caramel",
+    "Chocolate",
+    "Citrus",
+    "Clean",
+    "Clean Finish",
+    "Cocoa",
+    "Complex",
+    "Earthy",
+    "Floral",
+    "Fruity",
+    "Heavy Body",
+    "Herbal",
+    "Honey",
+    "Jasmine",
+    "Low Acidity",
+    "Mild",
+    "Nutty",
+    "Silky",
+    "Smooth",
+    "Spicy",
+    "Sweet",
+    "Tea-like",
+    "Winey"
+  ],
+  "roast": [
+    "Light",
+    "Medium-Light",
+    "Medium",
+    "Medium-Dark",
+    "Dark"
+  ]
+}

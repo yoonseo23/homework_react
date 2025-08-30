@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Ethiopia Yirgacheffe",
+    "origin": "Ethiopia",
+    "roast": "Light",
+    "flavorNotes": ["Floral", "Citrus", "Tea-like"]
+  },
+  {
+    "id": 2,
+    "name": "Colombia Supremo",
+    "origin": "Colombia",
+    "roast": "Medium",
+    "flavorNotes": ["Caramel", "Nutty", "Balanced"]
+  },
+  {
+    "id": 3,
+    "name": "Kenya AA",
+    "origin": "Kenya",
+    "roast": "Medium-Light",
+    "flavorNotes": ["Berry", "Winey", "Bright Acidity"]
+  },
+  {
+    "id": 4,
+    "name": "Sumatra Mandheling",
+    "origin": "Indonesia",
+    "roast": "Dark",
+    "flavorNotes": ["Earthy", "Spice", "Chocolate"]
+  },
+  {
+    "id": 5,
+    "name": "Guatemala Antigua",
+    "origin": "Guatemala",
+    "roast": "Medium",
+    "flavorNotes": ["Cocoa", "Nutty", "Clean"]
+  },
+  {
+    "id": 6,
+    "name": "Brazil Santos",
+    "origin": "Brazil",
+    "roast": "Medium-Dark",
+    "flavorNotes": ["Chocolate", "Nutty", "Low Acidity"]
+  },
+  {
+    "id": 7,
+    "name": "Costa Rica Tarrazu",
+    "origin": "Costa Rica",
+    "roast": "Medium",
+    "flavorNotes": ["Bright", "Citrus", "Honey"]
+  },
+  {
+    "id": 8,
+    "name": "Honduras Marcala",
+    "origin": "Honduras",
+    "roast": "Medium-Light",
+    "flavorNotes": ["Sweet", "Chocolate", "Fruity"]
+  },
+  {
+    "id": 9,
+    "name": "India Monsooned Malabar",
+    "origin": "India",
+    "roast": "Dark",
+    "flavorNotes": ["Earthy", "Spicy", "Low Acidity"]
+  },
+  {
+    "id": 10,
+    "name": "Panama Geisha",
+    "origin": "Panama",
+    "roast": "Light",
+    "flavorNotes": ["Floral", "Jasmine", "Complex"]
+  },
+  {
+    "id": 11,
+    "name": "Mexico Chiapas",
+    "origin": "Mexico",
+    "roast": "Medium",
+    "flavorNotes": ["Nutty", "Chocolate", "Mild"]
+  },
+  {
+    "id": 12,
+    "name": "Peru Cajamarca",
+    "origin": "Peru",
+    "roast": "Medium-Light",
+    "flavorNotes": ["Bright", "Fruity", "Clean Finish"]
+  },
+  {
+    "id": 13,
+    "name": "Tanzania Peaberry",
+    "origin": "Tanzania",
+    "roast": "Medium",
+    "flavorNotes": ["Winey", "Citrus", "Berry"]
+  },
+  {
+    "id": 14,
+    "name": "Rwanda Bourbon",
+    "origin": "Rwanda",
+    "roast": "Light",
+    "flavorNotes": ["Floral", "Berry", "Silky"]
+  },
+  {
+    "id": 15,
+    "name": "Burundi Kayanza",
+    "origin": "Burundi",
+    "roast": "Light",
+    "flavorNotes": ["Sweet", "Berry", "Complex"]
+  },
+  {
+    "id": 16,
+    "name": "El Salvador Pacamara",
+    "origin": "El Salvador",
+    "roast": "Medium",
+    "flavorNotes": ["Chocolate", "Nutty", "Balanced"]
+  },
+  {
+    "id": 17,
+    "name": "Nicaragua Jinotega",
+    "origin": "Nicaragua",
+    "roast": "Medium-Dark",
+    "flavorNotes": ["Cocoa", "Spice", "Smooth"]
+  },
+  {
+    "id": 18,
+    "name": "Papua New Guinea Sigri",
+    "origin": "Papua New Guinea",
+    "roast": "Medium",
+    "flavorNotes": ["Herbal", "Chocolate", "Citrus"]
+  },
+  {
+    "id": 19,
+    "name": "Hawaii Kona",
+    "origin": "Hawaii, USA",
+    "roast": "Medium-Light",
+    "flavorNotes": ["Floral", "Fruity", "Smooth"]
+  },
+  {
+    "id": 20,
+    "name": "Jamaica Blue Mountain",
+    "origin": "Jamaica",
+    "roast": "Medium",
+    "flavorNotes": ["Mild", "Balanced", "Smooth"]
+  },
+  {
+    "id": 21,
+    "name": "Uganda Bugisu",
+    "origin": "Uganda",
+    "roast": "Dark",
+    "flavorNotes": ["Earthy", "Heavy Body", "Spicy"]
+  },
+  {
+    "id": 22,
+    "name": "Laos Bolaven Plateau",
+    "origin": "Laos",
+    "roast": "Medium",
+    "flavorNotes": ["Nutty", "Spice", "Smooth"]
+  },
+  {
+    "id": 23,
+    "name": "Vietnam Dalat",
+    "origin": "Vietnam",
+    "roast": "Medium-Dark",
+    "flavorNotes": ["Chocolate", "Spice", "Bold"]
+  },
+  {
+    "id": 24,
+    "name": "Thailand Doi Chaang",
+    "origin": "Thailand",
+    "roast": "Medium",
+    "flavorNotes": ["Caramel", "Nutty", "Smooth"]
+  },
+  {
+    "id": 25,
+    "name": "Yemen Mocha Matari",
+    "origin": "Yemen",
+    "roast": "Medium-Dark",
+    "flavorNotes": ["Winey", "Spicy", "Chocolate"]
+  },
+  {
+    "id": 26,
+    "name": "Zimbabwe AA",
+    "origin": "Zimbabwe",
+    "roast": "Medium",
+    "flavorNotes": ["Bright", "Citrus", "Balanced"]
+  },
+  {
+    "id": 27,
+    "name": "Cameroon Boyo",
+    "origin": "Cameroon",
+    "roast": "Medium",
+    "flavorNotes": ["Nutty", "Spicy", "Smooth"]
+  },
+  {
+    "id": 28,
+    "name": "Bolivia Caranavi",
+    "origin": "Bolivia",
+    "roast": "Medium-Light",
+    "flavorNotes": ["Cocoa", "Nutty", "Bright"]
+  },
+  {
+    "id": 29,
+    "name": "Philippines Kalinga",
+    "origin": "Philippines",
+    "roast": "Medium-Dark",
+    "flavorNotes": ["Bold", "Chocolate", "Spicy"]
+  },
+  {
+    "id": 30,
+    "name": "Ecuador Loja",
+    "origin": "Ecuador",
+    "roast": "Medium",
+    "flavorNotes": ["Fruity", "Nutty", "Clean"]
+  }
+]
