@@ -5,7 +5,7 @@ export function TagFlavors({ selected, onToggle }) {
   const tagFlavors = Array.from(new Set(detailData.flavorNotes ?? []))
 
   return (
-    <ul style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+    <ul className="filterTagList">
     {tagFlavors.map((tag) => (
       <li key={tag}>
         <button
@@ -27,7 +27,7 @@ export function TagRoast({ selected, onToggle }) {
 const tagRoast = Array.from(new Set(detailData.roast ?? []))
 
 return (
-  <ul style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+  <ul className="filterTagList">
   {tagRoast.map((tag) => (
     <li key={tag}>
       <button

@@ -48,6 +48,9 @@
 }
 
 .filterList {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
   border-block: 1px solid var(--coffee-400, #968878);
   background-color: #FFFDF8;
   padding-block: 1.5rem;
@@ -96,7 +99,11 @@
   }
 }
 
-
+.filterTagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
 
 .tag {
   border-radius: 20px;
