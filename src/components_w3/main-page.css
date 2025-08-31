@@ -173,3 +173,11 @@
     outline: 3px solid var(--coffee-700);
   }
 }
+
+.empty {
+  padding-block: 2rem;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--coffee-300, #A49076);
+}
