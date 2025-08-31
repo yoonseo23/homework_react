@@ -3,7 +3,7 @@ import CardFlavorTags from "./card-flavor-tags"
 // @ts-ignore
 export default function CardList({ beans = [] }) {
   if (!Array.isArray(beans) || beans.length === 0) {
-    return <p className="empty">조건에 맞는 원두가 없습니다.</p>
+    return <p className="empty">No Beans match your search.</p>
   }
 
   return (
