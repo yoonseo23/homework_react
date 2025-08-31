@@ -103,6 +103,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
+
+  &.cardFilter {
+    gap: .25rem;
+  }
 }
 
 .tag {

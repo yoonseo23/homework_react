@@ -4,7 +4,7 @@ export default function CardFlavorTags({flavorNotes = []}) {
   if (!Array.isArray(flavorNotes) || flavorNotes.length === 0) return null
 
   return (
-    <ul style={{ "display": "flex", "flexWrap": "wrap"}}>
+    <ul className="filterTagList cardFilter">
       {
         flavorList.map((tag) => {
         return <li key={tag}><span className="tag tagblock" >{tag}</span></li>
