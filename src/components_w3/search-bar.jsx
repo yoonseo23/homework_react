@@ -5,8 +5,9 @@ import searchButton from "./../image/search-button.svg"
 export default function SearchBar({ onSearch }) {
   const [inputValue, setInputValue] = useState("")
   const id = useId()
-  const handleSearch = (e) => {
-    e.preventDefault()
+  // @ts-ignore
+  const handleSearch = ({ preventDefault }) => {
+    preventDefault()
     onSearch(inputValue)
   }
 
