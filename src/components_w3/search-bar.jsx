@@ -6,8 +6,8 @@ export default function SearchBar({ onSearch }) {
   const [inputValue, setInputValue] = useState("")
   const id = useId()
   // @ts-ignore
-  const handleSearch = ({ preventDefault }) => {
-    preventDefault()
+  const handleSearch = (e) => {
+    e.preventDefault()
     onSearch(inputValue)
   }
 
